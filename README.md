@@ -1,2 +1,3 @@
-# dbrglc.github.io
-My personal website 🌐
+# My personal website 👨🏻‍💻
+
+My first experience with front-end.
