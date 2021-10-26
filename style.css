@@ -1,0 +1,110 @@
+body{
+    height: 100vh;
+    margin: 0vh;
+    background-image: url(/images/background.svg);
+    background-size: cover;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.in-centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.in-colonna{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.in-riga{
+    display: flex;
+    flex-direction: row;
+}
+
+.in-riga > * { 
+    flex: 1; 
+}
+
+.button {
+    display: block;
+    margin: 20px 0;
+    min-height: 50px;
+    padding: 13px 24px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-position: top center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transition-property: background, color;
+}
+
+.button1 {
+    position: relative;
+    display: block;
+    border-radius: 26px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-color: white;
+    background-clip: padding-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-repeat: repeat-x;
+    background-size: calc(100% + 2px * 2) calc(100% + 2px * 2);
+    background-position: center;
+    border-radius: 26px;
+    z-index: -1;
+    transition: border-color 0.2s;
+}
+
+.button1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70vmax;
+    height: 70vmax;
+    border-radius: 50%;
+    /* background-image: linear-gradient(90deg, #008cff, #6942ef); */
+    background-image: linear-gradient(90deg, rgb(149, 149, 255), rgb(0, 0, 255));
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.button1:hover {
+    color: var(--textColor2);
+}
+
+.button1:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.button1:active {
+    color: #c3c4d5;
+}
+
+.button1:focus {
+    color: white;
+}
