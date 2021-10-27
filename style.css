@@ -3,6 +3,8 @@ body{
     margin: 0vh;
     background-image: url(/images/background.svg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'Gothic A1', sans-serif;
 }
 
