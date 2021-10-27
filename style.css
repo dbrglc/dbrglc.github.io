@@ -6,6 +6,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     font-family: 'Gothic A1', sans-serif;
+    color: black;
 }
 
 .in-centro{
@@ -16,9 +17,9 @@ body{
 }
 
 .in-colonna{
-    align-content: center;
     display: flex;
     flex-direction: column;
+    align-content: center;
     text-align: center;
 }
 
@@ -88,7 +89,6 @@ body{
     width: 70vmax;
     height: 70vmax;
     border-radius: 50%;
-    /* background-image: linear-gradient(90deg, #008cff, #6942ef); */
     background-image: linear-gradient(90deg, rgb(149, 149, 255), rgb(0, 0, 255));
     transform-origin: center;
     transform: translate(-50%, -50%) scale(0);
@@ -97,7 +97,7 @@ body{
 }
 
 .button1:hover {
-    color: var(--textColor2);
+    color: white;
 }
 
 .button1:hover::after {
@@ -105,7 +105,7 @@ body{
 }
 
 .button1:active {
-    color: #c3c4d5;
+    color: white;
 }
 
 .button1:focus {
