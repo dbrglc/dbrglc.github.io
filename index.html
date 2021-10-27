@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito Personale</title>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-    <div class="in-centro">
-        <div class="in-colonna">
+    <main>
+        <div class="center">
             <h1>Hi, I'm Gianluca D'Abrosca</h1>
-            <div class="in-riga">
-                <div class="in-colonna in-riga">
-                    <button class="button button1">
-                        <span class="button-content">Github Projects</span>
+            <div class="row">
+                <div class="column row">
+                    <button class="button-trasparent" onclick="window.location.href='/pages/github_projects.html'">
+                        <span>Github Projects</span>
                     </button>
                 </div>
-                <div class="in-colonna in-riga">
-                    <button class="button button1">
-                        <span class="button-content">Curriculum</span>
+                <div class="column row">
+                    <button class="button-trasparent" onclick="window.location.href='/pages/curriculum.html'">
+                        <span>Curriculum</span>
                     </button>
                 </div>
-                <div class="in-colonna in-riga">
-                    <button class="button button1">
-                        <span class="button-content">Contacts</span>
+                <div class="column row">
+                    <button class="button-trasparent" onclick="window.location.href='/pages/contacts.html'">
+                        <span>Contacts</span>
                     </button>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>

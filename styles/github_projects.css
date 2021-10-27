@@ -1,0 +1,33 @@
+#projects {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1em;
+}
+
+.project-description {
+    margin: 0em 1em;
+}
+
+.project-card{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    #projects {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+@media (max-width: 779px) {
+    #container {
+        height: 100%;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+}
