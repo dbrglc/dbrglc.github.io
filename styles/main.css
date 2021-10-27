@@ -4,7 +4,7 @@ html, body, main {
 }
 
 html{
-    background-image: linear-gradient(to right, #7b4397, #dc2430);
+    background-image: linear-gradient(to bottom, #7b4397, #dc2430);
     font-family: Avenir;
     font-weight: bold;
     color: white;
