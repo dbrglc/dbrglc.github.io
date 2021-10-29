@@ -7,12 +7,3 @@
     cursor: pointer;
     color: white;
 }
-
-.row{
-    display: flex;
-    flex-direction: row;
-}
-
-.row > * { 
-    flex: 1; 
-}
