@@ -14,9 +14,12 @@ html{
     background-attachment: fixed;
 }
 
+.container{
+    min-height: 100%;
+}
+
 .center{
     display: flex;
-    min-height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
