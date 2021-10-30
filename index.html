@@ -9,33 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/icons.css"> 
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
     <main>
         <div class="center">
             <h1>Hi, I'm Gianluca D'Abrosca</h1>
-            <div class="three-element">
-                <div>
-                    <button class="button-trasparent" onclick="window.location.href='/pages/github_projects.html'">
-                        <i class="fab fa-github"></i>
-                        <span>Github Projects</span>
-                    </button>
-                </div>
-                <div>
-                    <button class="button-trasparent" onclick="window.location.href='https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing'">
-                        <i class="fas fa-scroll"></i>
-                        <span>Curriculum</span>
-                    </button>
-                </div>
-                <div>
-                    <button class="button-trasparent" onclick="window.location.href='/pages/contacts.html'">
-                        <i class="fas fa-address-book"></i>
-                        <span>Contacts</span>
-                    </button>
-                </div>
+            <div class="grid">
+                <i class="fab fa-github pointer" data-link="github_projects"></i>
+                <i class="fas fa-scroll pointer" data-link="curriculum"></i>
+                <i class="fas fa-address-book pointer" data-link="contacts"></i>
+                <span class="pointer" data-link="github">
+                    Github Projects
+                </span>
+                <span class="pointer" data-link="curriculum">
+                    Curriculum
+                </span>
+                <span class="pointer" data-link="contacts">
+                    Contacts
+                </span>
             </div>
         </div>
     </main>
+
+    <script src="/script/jquery.js"></script>
+    <script src="/script/link.js"></script>
 </body>
 </html>

@@ -9,33 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/icons.css"> 
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
     <main>
         <div class="center">
             <h1>Contacts</h1>
-            <div class="three-element">
-                <div>
-                    <button class="button-trasparent" onclick="window.location.href='https://github.com/dbrglc'">
-                        <i class="fab fa-github"></i>
-                        <span>Github</span>
-                    </button>
-                </div>
-                <div>
-                    <button class="button-trasparent" onclick="window.location.href='mailto:gianluca.dabrosca.1999@gmail.com'">
-                        <i class="fas fa-envelope"></i>
-                        <span>Mail</span>
-                    </button>
-                </div>
-                <div>
-                    <button class="button-trasparent" onclick="window.location.href='https://www.instagram.com/gianluca.dabrosca/'">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </button>
-                </div>
+            <div class="grid">
+                <i class="fab fa-github pointer" data-link="github"></i>
+                <i class="fas fa-envelope pointer" data-link="mail"></i>
+                <i class="fab fa-instagram pointer" data-link="instagram"></i>
+                <span class="pointer" data-link="github">
+                    Github
+                </span>
+                <span class="pointer" data-link="mail">
+                    Mail
+                </span>
+                <span class="pointer" data-link="instagram">
+                    Instagram
+                </span>
             </div>
         </div>
     </main>
+
+    <script src="/script/jquery.js"></script>
+    <script src="/script/link.js"></script>
 </body>
 </html>

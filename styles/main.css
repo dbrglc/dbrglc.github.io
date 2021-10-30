@@ -21,3 +21,14 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 30%;
+}
+
+.pointer{
+    cursor: pointer;
+    align-self: center;
+}
