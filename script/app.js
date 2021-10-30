@@ -1,3 +1,5 @@
+const swup = new Swup();
+
 // Generate the cards of the projects
 let repos = async function () {
     let fetchCall = await fetch("https://api.github.com/users/dbrglc/repos");
@@ -21,3 +23,6 @@ function clickOnLink () {
 };
   
 clickOnLink();
+document.addEventListener('swup:contentReplaced', (event) => {
+    clickOnLink();
+});

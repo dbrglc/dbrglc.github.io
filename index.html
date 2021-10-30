@@ -9,29 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/icons.css"> 
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/github_projects.css">
+    <link rel="stylesheet" href="/styles/transition.css">
 </head>
 <body>
     <main>
-        <div class="container center">
+        <div id="swup" class="container center transition-fade">
             <h1>Hi, I'm Gianluca D'Abrosca</h1>
             <div class="grid">
-                <i class="fab fa-github pointer" data-link="github_projects"></i>
-                <i class="fas fa-scroll pointer" data-link="curriculum"></i>
-                <i class="fas fa-address-book pointer" data-link="contacts"></i>
-                <span class="pointer" data-link="github_projects">
+                <a class="fab fa-github" href="/pages/github_projects.html"></a>
+                <a class="fas fa-scroll" href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing"></a>
+                <a class="fas fa-address-book" href="/pages/contacts.html"></a>
+                <a href="/pages/github_projects.html">
                     Github Projects
-                </span>
-                <span class="pointer" data-link="curriculum">
+                </a>
+                <a href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing">
                     Curriculum
-                </span>
-                <span class="pointer" data-link="contacts">
+                </a>
+                <a href="/pages/contacts.html">
                     Contacts
-                </span>
+                </a>
             </div>
         </div>
     </main>
 
     <script src="/script/jquery.js"></script>
-    <script src="/script/link.js"></script>
+    <script src="/script/swup.js"></script>
+    <script src="/script/app.js"></script>
 </body>
 </html>

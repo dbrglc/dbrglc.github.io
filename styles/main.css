@@ -25,13 +25,24 @@ html{
     align-items: center;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    align-self: center;
+}
+
+.fas.fa-home {
+    font-size: 2em;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    min-width: 30%;
+    min-width: 40%;
 }
 
-.pointer{
-    cursor: pointer;
-    align-self: center;
+@media (max-width: 900px) {
+    .grid {
+        min-width: 80%;
+    }
 }
