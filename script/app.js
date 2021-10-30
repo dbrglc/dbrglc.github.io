@@ -1,4 +1,7 @@
-const swup = new Swup();
+const options = {
+    animateHistoryBrowsing: true
+};
+const swup = new Swup(options);
 
 // Generate the cards of the projects
 let repos = async function () {
