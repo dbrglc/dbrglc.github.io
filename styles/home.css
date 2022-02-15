@@ -1,0 +1,73 @@
+/* INIZIO DEBUG */
+
+section{
+    min-height: 1000px;
+}
+
+/* FINE DEBUG */
+
+
+/* INIZIO NAV */
+
+.navigation {
+    position: fixed;
+    list-style-type: none;
+    right: 30px;
+    top: 300px;
+}
+
+.navigation a {
+    /* -webkit-transition: all 0.3s; */
+    /* -moz-transition: all 0.3s; */
+    /* -ms-transition: all 0.3s; */
+    /* -o-transition: all 0.3s; */
+    transition: all 0.3s;
+    /* -webkit-border-radius: 100%; */
+    /* -moz-border-radius: 100%; */
+    /* -ms-border-radius: 100%; */
+    border-radius: 100%;
+    border: 2px solid transparent;
+    display: block;
+    margin-bottom: 10px;
+    width: 16px;
+    height: 16px;
+    /* overflow: hidden; */
+}
+
+.navigation a span {
+    /* -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%; */
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.43);
+    display: block;
+    width: 16px;
+    height: 16px;
+    /* vertical-align: top; */
+}
+
+.navigation a.active, .navigation a:hover {
+    border: 2px solid white;
+}
+
+/* FINE NAV */
+
+/* INIZIO BODY */
+
+body{
+    margin: 0px;
+    color: white;
+}
+
+.image, .projects{
+    background-color: #5C5C5C;
+}
+.presentation, .contacts{
+    background-color: #141414;
+}
+
+h1{
+    margin: 0px;
+}
+
+/* FINE BODY */
