@@ -7,13 +7,14 @@ section{
 /* FINE DEBUG */
 
 
+
 /* INIZIO NAV */
 
 .navigation {
     position: fixed;
     list-style-type: none;
     right: 30px;
-    top: 300px;
+    top: 42%;
 }
 
 .navigation a {
@@ -52,6 +53,8 @@ section{
 
 /* FINE NAV */
 
+
+
 /* INIZIO BODY */
 
 body{
@@ -59,7 +62,7 @@ body{
     color: white;
 }
 
-.image, .projects{
+.projects{
     background-color: #5C5C5C;
 }
 .presentation, .contacts{
@@ -68,6 +71,62 @@ body{
 
 h1{
     margin: 0px;
+}
+
+.image{
+    min-height: 1000px;
+    background: black url(../img/graph.jpg) no-repeat center;
+    background-size: contain;
+}
+
+.container{
+    min-height: 1000px;
+    width: 70%;
+    margin: auto;
+    font-family: Heiti SC;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.container h2{
+    font-size: 30px;
+}
+
+.container p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.progetto {
+    line-height: 70%;
+    margin: 10px 0;
+}
+
+.titolo-progetto {
+    font-size: 25px;
+    text-decoration: none;
+    background-color: white;
+    color: #5C5C5C;
+    line-break: anywhere;
+    line-height: 100%;
+}
+
+.descrizione-progetto {
+    font-size: 20px;
+}
+
+section{
+    min-height: 1000px;
+    padding: 50px 0;
 }
 
 /* FINE BODY */

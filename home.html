@@ -10,25 +10,41 @@
 <body>
     <ul class="navigation">
         <a href="javascript:Navigation.scrollTo('image');" class="active"><span></span></a>
-        <a href="javascript:Navigation.scrollTo('presentation');"><span></span></a>
-        <a href="javascript:Navigation.scrollTo('projects');"><span></span></a>
-        <a href="javascript:Navigation.scrollTo('contacts');"><span></span></a>
+        <a href="javascript:Navigation.scrollTo('presentation h2');"><span></span></a>
+        <a href="javascript:Navigation.scrollTo('projects h2');"><span></span></a>
+        <a href="javascript:Navigation.scrollTo('contacts h2');"><span></span></a>
     </ul>
     <section class="image">
-        <h1>image</h1>
+        <div class="container">
+            <h1>Hi, I'm Gianluca D'Abrosca</h1>
+        </div>
     </section>
     <section class="presentation">
-        <h1>presentation</h1>
+        <div class="container">
+            <h2>PRESENTATION</h2>
+            <p>
+                I am an Italian student specializing in Big Data Analysis at the University of Udine.
+                <br>
+                I am very interested in all computer science, in particular networking is a field to which I devote a lot of attention.
+            </p>
+        </div>
     </section>
     <section class="projects">
-        <h1>projects</h1>
+        <div class="container">
+            <h2>PROJECTS</h2>
+        </div>
     </section>
     <section class="contacts">
-        <h1>contacts</h1>
+        <div class="container">
+            <h2>CONTACTS</h2>
+            <p>Insert mail, github and instagram</p>
+        </div>
     </section>
 
     <script src="/script/library/jquery.js"></script>
     <script src="/script/library/jquery.waypoints.min.js"></script>
     <script src="/script/navigation.js"></script>
+    <script src="/script/project_loader.js"></script>
+    <script src="/script/library/emoji.js"></script>
 </body>
 </html>

@@ -5,19 +5,19 @@ var Navigation = (function($) {
 		navIndex = 0;
 
         // Waypoint per presentazione
-		$('.presentation').waypoint(function(direction) {
+		$('.presentation h2').waypoint(function(direction) {
 			$('.presentation').toggleClass('presentation-active');
 			setNav(direction);
 		}, { offset: $('.navigation').offset().top });
 
         // Waypoint per progetti
-		$('.projects').waypoint(function(direction) {
+		$('.projects h2').waypoint(function(direction) {
 			$('.projects').toggleClass('projects-active');
 			setNav(direction);
 		}, { offset: $('.navigation').offset().top });
 
         // Waypoint per contatti
-		$('.contacts').waypoint(function(direction) {
+		$('.contacts h2').waypoint(function(direction) {
 			$('.contacts').toggleClass('contacts-active');
 			setNav(direction);
 		}, { offset: $('.navigation').offset().top });
@@ -32,6 +32,7 @@ var Navigation = (function($) {
 
     // Riporta alla giusta sezione una volta cliccato sul pallino
 	var scrollTo = function(classe) {
+		console.log(classe)
         $('html, body').animate({ scrollTop: $("." + classe).offset().top - 200}, 1000);
 	};
 	
@@ -42,4 +43,4 @@ var Navigation = (function($) {
 
 }(jQuery));
 
-Navigation.init();
+// Navigation.init();
