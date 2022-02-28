@@ -43,4 +43,3 @@ var Navigation = (function($) {
 
 }(jQuery));
 
-// Navigation.init();

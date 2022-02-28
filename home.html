@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="black">
+    <title>Sito Personale</title>
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/icons.css"> 
 </head>
 <body>
     <ul class="navigation">
@@ -22,6 +24,7 @@
     <section class="presentation">
         <div class="container">
             <h2>PRESENTATION</h2>
+            <div class="animated-line"></div>
             <p>
                 I am an Italian student specializing in Big Data Analysis at the University of Udine.
                 <br>
@@ -37,7 +40,24 @@
     <section class="contacts">
         <div class="container">
             <h2>CONTACTS</h2>
-            <p>Insert mail, github and instagram</p>
+            <div class="grid">
+                <div class="contatto">
+                    <a class="fab fa-github" href="/pages/github_projects.html"></a>
+                    <a href="/pages/github_projects.html">Github Projects</a>
+                </div>
+                <div class="contatto">   
+                    <a class="fas fa-scroll" href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing"></a>
+                    <a href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing">Curriculum</a>
+                </div>
+                <div class="contatto">
+                    <a class="fas fa-envelope" href="mailto:gianluca.dabrosca.1999@gmail.com"></a>
+                    <a href="mailto:gianluca.dabrosca.1999@gmail.com">Mail</a>
+                </div>
+                <div class="contatto">
+                    <a class="fab fa-instagram" href="https://www.instagram.com/gianluca.dabrosca"></a>
+                    <a href="https://www.instagram.com/gianluca.dabrosca">Instagram</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -46,5 +66,6 @@
     <script src="/script/navigation.js"></script>
     <script src="/script/project_loader.js"></script>
     <script src="/script/library/emoji.js"></script>
+    <script src="/script/library/ScrollMagic.min.js"></script>
 </body>
 </html>

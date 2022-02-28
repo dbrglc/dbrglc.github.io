@@ -1,13 +1,3 @@
-/* INIZIO DEBUG */
-
-section{
-    min-height: 1000px;
-}
-
-/* FINE DEBUG */
-
-
-
 /* INIZIO NAV */
 
 .navigation {
@@ -17,34 +7,28 @@ section{
     top: 42%;
 }
 
+@media only screen and (max-width: 600px) {
+    .navigation {
+        right: 10px;
+    }
+}
+
 .navigation a {
-    /* -webkit-transition: all 0.3s; */
-    /* -moz-transition: all 0.3s; */
-    /* -ms-transition: all 0.3s; */
-    /* -o-transition: all 0.3s; */
     transition: all 0.3s;
-    /* -webkit-border-radius: 100%; */
-    /* -moz-border-radius: 100%; */
-    /* -ms-border-radius: 100%; */
     border-radius: 100%;
     border: 2px solid transparent;
     display: block;
     margin-bottom: 10px;
     width: 16px;
     height: 16px;
-    /* overflow: hidden; */
 }
 
 .navigation a span {
-    /* -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%; */
     border-radius: 100%;
     background: rgba(255, 255, 255, 0.43);
     display: block;
     width: 16px;
     height: 16px;
-    /* vertical-align: top; */
 }
 
 .navigation a.active, .navigation a:hover {
@@ -52,8 +36,6 @@ section{
 }
 
 /* FINE NAV */
-
-
 
 /* INIZIO BODY */
 
@@ -65,30 +47,34 @@ body{
 .projects{
     background-color: #5C5C5C;
 }
+
 .presentation, .contacts{
     background-color: #141414;
 }
 
 h1{
     margin: 0px;
+    text-align: center;
 }
 
 .image{
-    min-height: 1000px;
+    min-height: 100vh;
     background: black url(../img/graph.jpg) no-repeat center;
     background-size: contain;
 }
 
 .container{
-    min-height: 1000px;
     width: 70%;
     margin: auto;
     font-family: Heiti SC;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-size: 30px;
+    padding: 10vh 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 85%;
+    }
 }
 
 .container h1{
@@ -104,7 +90,37 @@ h1{
 .container p{
     font-size: 20px;
     text-align: justify;
+    margin: 10vh 0 0 0;
 }
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* FINE BODY */
+
+/* INIZIO PRESENTAZIONE */
+
+.animated-line {
+    width: 0px;
+    height: 5px;
+    left: 0px;
+    background-color: white;
+    position: relative;
+    transition: 1.5s all cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.presentation-active .animated-line {
+    width: 20vh;
+    left: 20vh;
+}
+
+/* FINE PRESENTAZIONE */
+
+/* INIZIO PROGETTI */
 
 .progetto {
     line-height: 70%;
@@ -124,9 +140,38 @@ h1{
     font-size: 20px;
 }
 
-section{
-    min-height: 1000px;
-    padding: 50px 0;
+/* FINE PROGETTI */
+
+/* INIZIO CONTATTI */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 40%;
+    justify-items: center;
+    text-align: center;
 }
 
-/* FINE BODY */
+@media (max-width: 600px) {
+    .grid {
+        min-width: 80%;
+    }
+}
+
+.grid a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contacts .container h2{
+    text-align: center;
+}
+
+.contatto {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0;
+}
+
+/* FINE CONTATTI */
