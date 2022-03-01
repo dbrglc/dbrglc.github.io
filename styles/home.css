@@ -44,25 +44,6 @@ body{
     color: white;
 }
 
-.projects{
-    background-color: #5C5C5C;
-}
-
-.presentation, .contacts{
-    background-color: #141414;
-}
-
-h1{
-    margin: 0px;
-    text-align: center;
-}
-
-.image{
-    min-height: 100vh;
-    background: black url(../img/graph.jpg) no-repeat center;
-    background-size: contain;
-}
-
 .container{
     width: 70%;
     margin: auto;
@@ -70,17 +51,10 @@ h1{
     font-size: 30px;
     padding: 10vh 0;
 }
-
 @media only screen and (max-width: 600px) {
     .container {
         width: 85%;
     }
-}
-
-.container h1{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
 }
 
 .container h2{
@@ -102,7 +76,48 @@ section {
 
 /* FINE BODY */
 
+/* INIZIO HOME */
+
+.home{
+    background: black;
+}
+
+.obl-line {
+    background: white;
+    width: 2px;
+    height: 50vh;
+    left: 50vw;
+    top: 25vh;
+    position: absolute;
+    transition: 3s all cubic-bezier(0.23, 1, 0.32, 1);
+}
+.rotate-left {
+    transform: rotate(45deg);
+}
+.rotate-right {
+    transform: rotate(-45deg);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    transition: 3s all cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animazione-titolo{
+    border: white 5px solid;
+    padding: 10px;
+}
+
+/* FINE HOME */
+
 /* INIZIO PRESENTAZIONE */
+
+.presentation {
+    background-color: #5C5C5C;
+}
 
 .animated-line {
     width: 0px;
@@ -112,7 +127,6 @@ section {
     position: relative;
     transition: 1.5s all cubic-bezier(0.23, 1, 0.32, 1);
 }
-
 .presentation-active .animated-line {
     width: 20vh;
     left: 20vh;
@@ -121,6 +135,10 @@ section {
 /* FINE PRESENTAZIONE */
 
 /* INIZIO PROGETTI */
+
+.projects{
+    background-color: #141414;
+}
 
 .progetto {
     line-height: 70%;
@@ -144,6 +162,10 @@ section {
 
 /* INIZIO CONTATTI */
 
+.contacts{
+    background-color: #5C5C5C;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -151,7 +173,6 @@ section {
     justify-items: center;
     text-align: center;
 }
-
 @media (max-width: 600px) {
     .grid {
         min-width: 80%;

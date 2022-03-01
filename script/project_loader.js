@@ -25,5 +25,8 @@ let repos = async function () {
 (function() { 
     if ( $('.projects .container') ) {
         repos();
+        $('#rotate-left').addClass('rotate-left');
+        $('#rotate-right').addClass('rotate-right');
+        $('#animazione-titolo').addClass('animazione-titolo');
     }
 }) ();
