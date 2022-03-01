@@ -18,15 +18,12 @@ let repos = async function () {
     template = emoji.replace_colons(template);
     $('.projects .container').append(template);
 
+    Navigation.init();
 };
-  
-// Check if there is the div with id='projects' before calling repos
-(function() { 
-    if ( $('.projects .container') ) {
-        // repos();
-        $('#rotate-left').addClass('rotate-left');
-        $('#rotate-right').addClass('rotate-right');
-        $('#animazione-titolo').addClass('animazione-titolo');
-        Navigation.init();
-    }
-}) ();
+
+$(window).on('load', function() {
+    $('#rotate-left').addClass('rotate-left');
+    $('#rotate-right').addClass('rotate-right');
+    $('#animazione-titolo').addClass('animazione-titolo');
+    repos();
+});
