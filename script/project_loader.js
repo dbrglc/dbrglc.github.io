@@ -18,7 +18,6 @@ let repos = async function () {
     template = emoji.replace_colons(template);
     $('.projects .container').append(template);
 
-    Navigation.init();
 };
   
 // Check if there is the div with id='projects' before calling repos
@@ -28,5 +27,6 @@ let repos = async function () {
         $('#rotate-left').addClass('rotate-left');
         $('#rotate-right').addClass('rotate-right');
         $('#animazione-titolo').addClass('animazione-titolo');
+        Navigation.init();
     }
 }) ();
