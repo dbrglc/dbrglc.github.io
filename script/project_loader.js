@@ -24,7 +24,7 @@ let repos = async function () {
 // Check if there is the div with id='projects' before calling repos
 (function() { 
     if ( $('.projects .container') ) {
-        repos();
+        // repos();
         $('#rotate-left').addClass('rotate-left');
         $('#rotate-right').addClass('rotate-right');
         $('#animazione-titolo').addClass('animazione-titolo');
