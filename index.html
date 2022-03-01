@@ -3,38 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
-    <meta name="theme-color" content="#7b4397">
-    <title>Sito Personale</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/icons.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="black">
+    <title>Gianluca D'Abrosca</title>
+    <link rel="icon" href="webfonts/cat.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/github_projects.css">
-    <link rel="stylesheet" href="/styles/transition.css">
+    <link rel="stylesheet" href="/styles/icons.css"> 
 </head>
 <body>
-    <main>
-        <div id="swup" class="container center transition-fade">
-            <h1>Hi, I'm Gianluca D'Abrosca</h1>
+    <ul class="navigation">
+        <a href="javascript:Navigation.scrollTo('puntatore-per-nav');" class="active"><span></span></a>
+        <a href="javascript:Navigation.scrollTo('presentation h2');"><span></span></a>
+        <a href="javascript:Navigation.scrollTo('projects h2');"><span></span></a>
+        <a href="javascript:Navigation.scrollTo('contacts h2');"><span></span></a>
+    </ul>
+    <section class="home">
+        <div class="container">
+            <div id="rotate-left" class="obl-line"></div>
+            <div id="rotate-right" class="obl-line"></div>
+            <h1 id="animazione-titolo" class="puntatore-per-nav">Ciao, sono Gianluca!</h1>
+        </div>
+    </section>
+    <section class="presentation">
+        <div class="container">
+            <h2>PRESENTAZIONE</h2>
+            <div class="animated-line-presentation"></div>
+            <p>
+                Ciao a tutti!
+                Sono un ragazzo friulano laureato in Informatica presso l'Universit&agrave; degli Studi di Udine, dove attualmente sto seguendo i corsi per specializzarmi in Analisi di Big Data.
+                <br>
+                <br>
+                Adoro viaggiare e provare nuove esperienze, per&ograve; cercando sempre di rimanere attivo per il sociale nella citt&agrave; in cui sono nato.
+            </p>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <div class="animated-line-projects"></div>
+            <h2>PROGETTI</h2>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="animated-line-contacts"></div>
+            <h2>CONTATTI</h2>
             <div class="grid">
-                <a class="fab fa-github" href="/pages/github_projects.html"></a>
-                <a class="fas fa-scroll" href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing"></a>
-                <a class="fas fa-address-book" href="/pages/contacts.html"></a>
-                <a href="/pages/github_projects.html">
-                    Github Projects
-                </a>
-                <a href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing">
-                    Curriculum
-                </a>
-                <a href="/pages/contacts.html">
-                    Contacts
-                </a>
+                <div class="contatto">
+                    <a class="fab fa-github" href="https://github.com/dbrglc"></a>
+                    <a href="https://github.com/dbrglc">Github</a>
+                </div>
+                <div class="contatto">   
+                    <a class="fas fa-scroll" href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing"></a>
+                    <a href="https://drive.google.com/file/d/1HmiIo3i9iMRdsJ35e85-0bmjKGVnWA2Y/view?usp=sharing">Curriculum</a>
+                </div>
+                <div class="contatto">
+                    <a class="fas fa-envelope" href="mailto:gianluca.dabrosca.1999@gmail.com"></a>
+                    <a href="mailto:gianluca.dabrosca.1999@gmail.com">Mail</a>
+                </div>
+                <div class="contatto">
+                    <a class="fab fa-instagram" href="https://www.instagram.com/gianluca.dabrosca"></a>
+                    <a href="https://www.instagram.com/gianluca.dabrosca">Instagram</a>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <script src="/script/library/jquery.js"></script>
-    <script src="/script/library/swup.js"></script>
-    <script src="/script/app.js"></script>
+    <script src="/script/library/jquery.waypoints.min.js"></script>
+    <script src="/script/library/emoji.js"></script>
+    <script src="/script/navigation.js"></script>
+    <script src="/script/project_loader.js"></script>
 </body>
 </html>
