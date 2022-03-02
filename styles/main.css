@@ -142,8 +142,8 @@ h1{
 }
 
 .carosello{
-    height: 50vh;
-    width: 75vw;
+    height: 70vh;
+    width: 80vw;
     margin: auto;
 
     display: flex;
@@ -163,9 +163,9 @@ h1{
     scroll-snap-align: start;
     flex-shrink: 0;
 
-    height: 45vh;
+    height: 50vh;
     width: 70vw;
-    margin: 0px 5px;
+    margin: auto 10px;
     border-radius: 20px;
     
     background: #5C5C5C;
@@ -176,6 +176,12 @@ h1{
     justify-content: center;
     text-align: center;
 }
+.slide:hover .titolo-progetto{
+    font-size: 30px;
+}
+.slide:hover .descrizione-progetto{
+    font-size: 25px;
+}
 
 .titolo-progetto {
     font-size: 25px;
@@ -185,17 +191,15 @@ h1{
     line-break: anywhere;
 
     padding: 20px;
-    margin-bottom: 10vh;
 
     transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
-}
-.titolo-progetto:hover{
-    font-size: 30px;
 }
 
 .descrizione-progetto {
     padding: 20px;
     font-size: 17px;
+
+    transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .animated-line-projects{

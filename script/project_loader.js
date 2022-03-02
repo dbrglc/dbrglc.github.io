@@ -7,8 +7,8 @@ let repos = async function () {
 
     for (let i = 0; i < result.length; i++) {
         template += `
-        <div class="slide">
-            <a href="${result[i].html_url}" class="titolo-progetto">${(result[i].name).replace(/-/g,' ')}</a>
+        <div style="cursor: pointer;" onclick="window.location='${result[i].html_url}';" class="slide">
+            <a class="titolo-progetto">${(result[i].name).replace(/-/g,' ')}</a>
             <span class="descrizione-progetto">
                 ${result[i].description}
             </span>
