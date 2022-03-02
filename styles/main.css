@@ -1,8 +1,4 @@
 /* INIZIO NAV */
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
 
 .navigation {
     position: fixed;
@@ -152,10 +148,15 @@ h1{
 
     display: flex;
     overflow-x: auto;
+    -ms-overflow-style: none;  /* hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* hide scrollbar for Firefox */
     scroll-snap-type: x mandatory;
   
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+}
+.carosello::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .slide{
@@ -164,7 +165,7 @@ h1{
 
     height: 45vh;
     width: 70vw;
-    margin: 5px;
+    margin: 0px 5px;
     border-radius: 20px;
     
     background: #5C5C5C;
@@ -183,6 +184,7 @@ h1{
     color: white;
     line-break: anywhere;
 
+    padding: 20px;
     margin-bottom: 10vh;
 
     transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
@@ -192,6 +194,7 @@ h1{
 }
 
 .descrizione-progetto {
+    padding: 20px;
     font-size: 17px;
 }
 
