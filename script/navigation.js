@@ -8,19 +8,28 @@ var Navigation = (function($) {
 		$('.presentation h2').waypoint(function(direction) {
 			$('.presentation').toggleClass('presentation-active');
 			setNav(direction);
-		}, { offset: $('.navigation').offset().top });
+		}, { offset: function() {
+				return $('.navigation').offset().top - $(document).scrollTop();
+			}
+		});
 
         // Waypoint per progetti
 		$('.projects h2').waypoint(function(direction) {
 			$('.projects').toggleClass('projects-active');
 			setNav(direction);
-		}, { offset: $('.navigation').offset().top });
+		}, { offset: function() {
+				return $('.navigation').offset().top - $(document).scrollTop();
+			}
+		});
 
         // Waypoint per contatti
 		$('.contacts h2').waypoint(function(direction) {
 			$('.contacts').toggleClass('contacts-active');
 			setNav(direction);
-		}, { offset: $('.navigation').offset().top });
+		}, { offset: function() {
+				return $('.navigation').offset().top - $(document).scrollTop();
+			}
+		});
 	};
 
     // Setta ad attivo il pallino corretto nella barra di navigazione
