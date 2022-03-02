@@ -1,4 +1,8 @@
 /* INIZIO NAV */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 
 .navigation {
     position: fixed;
@@ -141,18 +145,46 @@ h1{
     background-color: #141414;
 }
 
-.progetto {
-    line-height: 70%;
-    margin: 10px 0;
+.carosello{
+    height: 50vh;
+    width: 75vw;
+    margin: auto;
+
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slide{
+    scroll-snap-align: start;
+    flex-shrink: 0;
+
+    height: 45vh;
+    width: 70vw;
+    margin: 5px;
+    border-radius: 20px;
+    
+    background: #5C5C5C;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .titolo-progetto {
     font-size: 25px;
     text-decoration: none;
-    color: white;
     font-weight: bold;
+    color: white;
     line-break: anywhere;
-    line-height: 100%;
+
+    margin-bottom: 10vh;
+
     transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
 }
 .titolo-progetto:hover{

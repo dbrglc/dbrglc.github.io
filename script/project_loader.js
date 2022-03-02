@@ -7,7 +7,7 @@ let repos = async function () {
 
     for (let i = 0; i < result.length; i++) {
         template += `
-        <div class="progetto">
+        <div class="slide">
             <a href="${result[i].html_url}" class="titolo-progetto">${(result[i].name).replace(/-/g,' ')}</a>
             <span class="descrizione-progetto">
                 ${result[i].description}
@@ -16,7 +16,7 @@ let repos = async function () {
     }
     // Convert .md emoji in HTML ready ones
     template = emoji.replace_colons(template);
-    $('.projects .container').append(template);
+    $('.projects .container .carosello').append(template);
 
     Navigation.init();
 };
