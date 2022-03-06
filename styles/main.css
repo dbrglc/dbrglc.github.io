@@ -156,18 +156,31 @@ h1{
     -webkit-overflow-scrolling: touch;
 }
 .carosello::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+    width: 12px;
+}
+.carosello::-webkit-scrollbar-track {
+    background: transparent;
+}
+.carosello::-webkit-scrollbar-thumb {
+    background-color: #939393;
+    border-radius: 20px;
+    border: 3px solid #5b5b5b;
+  }
+@media (max-width: 600px) {
+    .carosello::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+    }
 }
 
-.slide{
+.slide {
     scroll-snap-align: start;
     flex-shrink: 0;
-
+    
     height: 50vh;
     width: 70vw;
     margin: auto 10px;
     border-radius: 20px;
-    
+
     background: #5C5C5C;
     color: white;
 
@@ -177,6 +190,8 @@ h1{
     text-align: center;
 
     transition: 3s all cubic-bezier(0.23, 1, 0.32, 1);
+
+    box-shadow: rgba(174, 174, 174, 0.4) 5px 5px, rgba(215, 215, 215, 0.3) 10px 10px, rgba(235, 235, 235, 0.2) 15px 15px, rgba(245, 245, 245, 0.1) 20px 20px, rgba(255, 255 ,255, 0.05) 25px 25px;
 }
 .slide:hover{
     background-color: #A3A3A3;
